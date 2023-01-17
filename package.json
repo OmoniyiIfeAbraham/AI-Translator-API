@@ -4,7 +4,6 @@
   "description": "This Program Translates text from one language to another.",
   "main": "App.js",
   "scripts": {
-    "test": "npm run dev",
     "start": "node App.js",
     "dev": "nodemon App.js"
   },
