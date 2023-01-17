@@ -7,6 +7,8 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
 
+const PORT = 2400
+
 require("dotenv").config();
 
 app.get("/", (req, res) => {
@@ -53,4 +55,4 @@ app.use((req, res) => {
   res.status(404).json({ message: "You went the Wrong way!!!" });
 });
 
-app.listen(2400, () => console.log("Server started on Port 2400"));
+app.listen(PORT, () => console.log(`Server started on Port ${PORT}`));
